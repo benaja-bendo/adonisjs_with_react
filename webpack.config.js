@@ -169,7 +169,11 @@ Encore.configureDevServerOptions((options) => {
 | PostCSS or CSS.
 |
 */
-// Encore.enablePostCssLoader()
+Encore.enablePostCssLoader((options) => {
+  options.postcssOptions = {
+    config: join(__dirname, 'postcss.config.js'),
+  }
+})
 // Encore.configureCssLoader(() => {})
 
 /*
