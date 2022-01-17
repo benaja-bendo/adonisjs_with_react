@@ -1,6 +1,10 @@
 const { join } = require('path')
 const Encore = require('@symfony/webpack-encore')
-
+Encore.enableReactPreset()
+// Encore.configureBabel((babelConfig) => {
+//   babelConfig.plugins.push('styled-jsx/babel')
+//   babelConfig.plugins.push('@babel/preset-flow')
+// })
 /*
 |--------------------------------------------------------------------------
 | Encore runtime environment
